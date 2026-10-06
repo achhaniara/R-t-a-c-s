@@ -5,7 +5,7 @@
 AI autonomous penetration testing system (Go backend + Next.js frontend)
 
 
-🌐 **Live Demo**: [https://artex-demo.vercel.app/](https://artex-demo.vercel.app/)
+🌐 **Live Demo**: `https://artex-demo.vercel.app/`
 
 </div>
 
@@ -13,7 +13,7 @@ AI autonomous penetration testing system (Go backend + Next.js frontend)
 
 ## Screenshot Preview
 
-> For the full interactive experience, see the [Live Demo](https://artex-demo.vercel.app/).
+> For the full interactive experience, see the Live Demo (`https://artex-demo.vercel.app/`).
 
 | Dashboard (Overview / Token usage / Activity feed) | Task list |
 | :---: | :---: |
@@ -49,12 +49,12 @@ AI autonomous penetration testing system (Go backend + Next.js frontend)
 ## Approval Record Details
 
 The global "Approval Records", the in-task "Interception Approval", and the approval cards in conversations all support expanding to view details. The display structure references
-[AegisHook's approval detail component](https://github.com/RuoJi6/AegisHook/blob/main/web/src/components/CallDetail.vue), following ARTEX's components and theme:
+AegisHook's approval detail component (`https://github.com/RuoJi6/AegisHook/blob/main/web/src/components/CallDetail.vue`), following ARTEX's components and theme:
 
 
 ## Asset Sync (ScopeSentry)
 
-Supports syncing asset data directly from [ScopeSentry](https://github.com/Autumn-27/ScopeSentry), eliminating redundant collection:
+Supports syncing asset data directly from ScopeSentry (`https://github.com/Autumn-27/ScopeSentry`), eliminating redundant collection:
 
 - On the "**Asset Sync**" page, fill in the ScopeSentry address and API Key to connect the data source;
 - Select the targets and asset types to sync by **project** or **task** dimension (domain / subdomain / IP / port / site / endpoint…);
@@ -100,7 +100,7 @@ Legacy SSE services typically establish an event stream via `GET /sse`, then rec
 
 ### Option 3: Download a prebuilt binary (Releases)
 
-Go to [Releases](https://github.com/Autumn-27/ARTEX/releases) and download the zip for your platform. After extracting, you get `artex` + `start.sh` (`start.bat` on Windows) + `skills/` + `config.example.json`:
+Go to Releases (`https://github.com/Autumn-27/ARTEX/releases`) and download the zip for your platform. After extracting, you get `artex` + `start.sh` (`start.bat` on Windows) + `skills/` + `config.example.json`:
 
 ```bash
 cp config.example.json config.json   # fill in the database connection
@@ -182,7 +182,7 @@ docker image prune -f          # clean up old images (optional)
 
 ### Option 4: Prebuilt binary (Releases)
 
-Go to [Releases](https://github.com/Autumn-27/ARTEX/releases), download the new version zip, stop the old process, overwrite `artex` and `skills/` (keeping your `config.json` and `data/`), and restart:
+Go to Releases (`https://github.com/Autumn-27/ARTEX/releases`), download the new version zip, stop the old process, overwrite `artex` and `skills/` (keeping your `config.json` and `data/`), and restart:
 
 ```bash
 cp -r <extracted dir>/skills ./ && cp <extracted dir>/artex ./
@@ -282,7 +282,7 @@ In this version, the history is viewed through the vulnerability details and the
 
 ## System Technical Architecture
 
-ARTEX is an **LLM multi-agent-driven autonomous penetration system**: a Go monolithic backend (with an embedded Next.js frontend) + PostgreSQL, where agent capabilities are provided by the [`norma`](https://github.com/Autumn-27/norma) SDK (`agentcore` / `tool` / `permission` / `harness` / `memory` / `transcript`). At its core is a **dual-graph architecture**, along with two autonomy mechanisms built around it: **process-level information exchange between workers** and a **planner multi-round shared todolist that stabilizes the attack chain**.
+ARTEX is an **LLM multi-agent-driven autonomous penetration system**: a Go monolithic backend (with an embedded Next.js frontend) + PostgreSQL, where agent capabilities are provided by the `norma` (`https://github.com/Autumn-27/norma`) SDK (`agentcore` / `tool` / `permission` / `harness` / `memory` / `transcript`). At its core is a **dual-graph architecture**, along with two autonomy mechanisms built around it: **process-level information exchange between workers** and a **planner multi-round shared todolist that stabilizes the attack chain**.
 
 ### Overall layering
 
@@ -463,7 +463,7 @@ Scan the code to follow the WeChat Official Account **SecSentry**, and send a di
 ---
 ## References
 
-https://github.com/oritera/Cairn
+`https://github.com/oritera/Cairn`
 
 
 ## License & Disclaimer
